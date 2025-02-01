@@ -11,6 +11,11 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.tree import DecisionTreeClassifier
 
+
+# filename = 'decision_tree_model_covid.pkl'
+# with open(filename, 'wb') as file:
+#     pickle.dump(model_dt, file)
+
 filename = 'decision_tree_model_covid.pkl'
 with open(filename, 'rb') as file:
     loaded_model = pickle.load(file)
